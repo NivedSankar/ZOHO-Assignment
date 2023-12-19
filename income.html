@@ -42,6 +42,12 @@
     .file-upload-box:hover {
       border-color: #333;
     }
+    .custom-radio {
+    height: 70px;
+    width: 330px;
+    margin-left: 5%;
+  }
+  
     </style>
     
     <meta charset="UTF-8">
@@ -175,6 +181,124 @@
         
         </div>
     </div>
+
+    <div style="height: 150px; width: 85%; background-color: rgb(255, 255, 255); margin-left: 7%; margin-top: 2%;">
+        <h4 style="margin-left: 2%; padding-top: 1%;">Civil Status</h4>
+        <hr>
+        <div class="row">
+            <div class="col">
+
+                <div class="form-group" style="margin-top: -1%; margin-left: 10%;">
+                    <label for="exampleInputEmail1" style="color: #aaa; margin-left: 0%;">Marital Status</label>
+                    <div class="select-wrapper" style="width: 80%; margin-left: 0%; position: relative;">
+                        <select class="form-control" style="width: 100%; padding-right: 25px;">
+                            <option>Married</option>
+                        </select>
+                        <span class="arrow-icon" style="position: absolute; top: 50%; right: 5px; transform: translateY(-50%); pointer-events: none;">
+                            ▼ <!-- Unicode for a downward arrow or use an image/icon -->
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="form-group" style="margin-left: 0%; margin-top: -1%;">
+                    <label for="exampleInputEmail1" style="color: #aaa; margin-left: 0%;">Spouse Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="Sai Vishnu" style="margin-left: 0%; width: 80%;">
+                    
+                  </div>
+            </div>
+            <div class="col">
+                <div class="form-group" style="margin-top: -1%; margin-left: 0%;">
+                    <label for="exampleInputEmail1" style="color: #aaa; margin-left: 0%;">Number of Dependants</label>
+                    <div class="select-wrapper" style="width: 80%; margin-left: 0%; position: relative;">
+                        <select class="form-control" style="width: 100%; padding-right: 25px;">
+                            <option>0</option>
+                        </select>
+                        <span class="arrow-icon" style="position: absolute; top: 50%; right: 5px; transform: translateY(-50%); pointer-events: none;">
+                            ▼ <!-- Unicode for a downward arrow or use an image/icon -->
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div  style="height: 150px; width: 85%; background-color: rgb(255, 255, 255); margin-left: 7%; margin-top: 2%;">
+        <h4 style="margin-left: 2%; padding-top: 1%;">Income</h4>
+        <hr>
+        <div class="row">
+            <div class="col" style="margin-top: -6px;">
+                <label for="exampleInputEmail1" style="color: #aaa; margin-left: 8%;">Monthly Income*</label>
+                <div class="input-group mb-3" style="margin-left: 8%;">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">AED</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button" value="30,000">
+                  </div>
+            </div>
+            <div class="col" style="margin-top: -6px;">
+                <label for="exampleInputEmail1" style="color: #aaa; margin-left: 8%;">Monthly Expense*</label>
+                <div class="input-group mb-3" style="margin-left: 8%;">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">AED</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button" value="15,000">
+                  </div>
+            </div>
+            <div class="col">
+                
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div style="height: 230px; width: 85%; background-color: rgb(255, 255, 255); margin-left: 7%; margin-top: 2%;">
+        <h4 style="margin-left: 2%; padding-top: 1%;">Beneficiary Details</h4>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined-1" autocomplete="off" style="height: 70px; width: 150px;">
+                <label class="btn btn-outline-danger custom-radio" for="danger-outlined-1" style="padding-top: 2%; padding-right: 40%;">Individual Client</label>
+                <div class="form-group" style="margin-left: 5%; margin-top: 2%;">
+                    <label for="exampleInputEmail1" style="color: #aaa; margin-left: 0%;">Work Phone Number*</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="8943916446" style="margin-left: 0%; width: 80%;">
+                    
+                  </div>
+            </div>
+            <div class="col">
+                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined-2" autocomplete="off" style="height: 70px; width: 150px;">
+                <label class="btn btn-outline-danger custom-radio" for="danger-outlined-2" style="padding-top: 2%; padding-right: 40%;">Corporate Client</label>
+
+                <div class="form-group" style="margin-left: 5%; margin-top: 2%;">
+                    <label for="exampleInputEmail1" style="color: #aaa; margin-left: 0%;">Work Email Address*</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="abc@email.com" style="margin-left: 0%; width: 80%;">
+                    
+                  </div>
+            </div>
+            <div class="col">
+                
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid" style="height: 80px; background-color: rgb(255, 255, 255); margin-top: 3%;">
+        <a href="id_verification.html"><button type="button" class="btn btn-outline-dark" style="margin-left: -86%; margin-top: 2%; width: 7%;">Back</button></a>
+        <a href="" style="margin-left: 82%; margin-top: 2%; float: left; text-decoration: none; color: rgb(198, 129, 2);">Save as draft</a>
+        <button type="button" class="btn btn-warning" style="margin-left: 85%; margin-top: -3%; float: right; margin-right: 3%; color: white; background-color: #D2691E;">Continue</button>
+        
+      </div>
     
 </body>
 </html>
